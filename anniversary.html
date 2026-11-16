@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Noona ❤️</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #ffe0ec, #fff0f5, #fce4ec);
+    color: #87445d;
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 35px 18px;
+    max-width: 750px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #e75480;
+    margin: 20px 0;
+    animation: heartbeat 2s infinite;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.date {
+    color: #d94d7c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.characters {
+    font-size: 65px;
+    margin: 20px;
+    animation: bounce 2s infinite;
+}
+
+.character {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.card {
+    background: rgba(255,255,255,0.88);
+    padding: 28px 22px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(231,84,128,0.15);
+    margin: 25px auto;
+    line-height: 1.9;
+}
+
+.card h2 {
+    color: #e75480;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #f06b96;
+    border: none;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d94d7c;
+    transform: scale(1.06);
+}
+
+#surprise {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 1.5s;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    animation: floatUp linear forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.qr-section {
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+input {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #f5a4bd;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 35px;
+    padding: 20px;
+    color: #d45c83;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="characters">
+        <span class="character">🐼</span>
+        <span class="character">🐱</span>
+    </div>
+
+    <h1>Happy 1 Month Anniversary, Noona! ❤️</h1>
+
+    <p class="subtitle">
+        For my Babeee, from your Bhaswat 💗
+    </p>
+
+    <p class="date">
+        17 October 2026 🌷
+    </p>
+
+    <div class="card">
+        <h2>To My Babeee 💌</h2>
+
+        <p>
+            Happy 1 Month Anniversary, my Noona! 🥹❤️
+            I still can't believe it's already been a month
+            since we started this beautiful journey together.
+            You have become such a special part of my life,
+            and every little moment with you means the world
+            to me.
+        </p>
+
+        <br>
+
+        <p>
+            Babeee, even when distance keeps us apart,
+            you are always close to my heart. Your messages,
+            your smile, your silly talks and even our little
+            arguments are memories I wouldn't trade for
+            anything.
+        </p>
+
+        <br>
+
+        <p>
+            I don't know what the future holds, but I know
+            that I want to make countless beautiful memories
+            with you. Thank you for choosing me and making
+            my life a little more beautiful.
+        </p>
+
+        <br>
+
+        <p>
+            Forever your Bhaswat. ❤️
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>A Little Surprise For You 🎀</h2>
+
+        <p>
+            My panda and kitty have a secret message
+            for you. Click below, Babeee! 🐼🐱
+        </p>
+
+        <button onclick="showSurprise()">
+            Open Your Surprise 💝
+        </button>
+
+        <div id="surprise">
+            <h2>I LOVE YOU, BABEEE! 💗</h2>
+
+            <p>
+                Noona, if I had to choose someone all over again,
+                I would choose you every single time.
+                You're my favourite notification,
+                my favourite person and my happiest little
+                corner of this world.
+
+                I love you so much, Babeee! 🥺❤️
+            </p>
+
+            <div style="font-size:55px; margin-top:15px;">
+                🐼💕🐱
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Our Little Promise 🌷</h2>
+
+        <p>
+            More smiles, more silly conversations,
+            more memories, more adventures and
+            countless anniversaries together.
+
+            Let's keep choosing each other, Babeee.
+            This is just the beginning of our story. ❤️
+        </p>
+    </div>
+
+    <div class="qr-section">
+        <h2>Our Special QR Code 💗</h2>
+
+        <p>
+            Paste your published website URL below:
+        </p>
+
+        <br>
+
+        <input
+            type="url"
+            id="siteURL"
+            placeholder="https://your-website-link.com"
+        >
+
+        <br>
+
+        <button onclick="generateQR()">
+            Generate QR Code 💌
+        </button>
+
+        <div id="qrcode"></div>
+
+        <p id="qrMessage"></p>
+    </div>
+
+    <footer>
+        Made with endless love by Bhaswat ❤️
+        <br>
+        For my Noona, my Babeee! 🐼🐱
+        <br>
+        17.10.2026 — Our Beginning 💗
+    </footer>
+
+</div>
+
+<script>
+
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+    createHearts(30);
+}
+
+function createHearts(amount = 1) {
+
+    for (let i = 0; i < amount; i++) {
+
+        const heart = document.createElement("div");
+
+        heart.className = "heart";
+
+        heart.innerHTML = ["❤️", "💕", "💗", "💖", "💘"][
+            Math.floor(Math.random() * 5)
+        ];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 4) + "s";
+
+        heart.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 7000);
+    }
+}
+
+setInterval(() => createHearts(), 700);
+
+function generateQR() {
+
+    const url = document.getElementById("siteURL").value.trim();
+
+    const qr = document.getElementById("qrcode");
+
+    const message = document.getElementById("qrMessage");
+
+    qr.innerHTML = "";
+    message.innerHTML = "";
+
+    if (!url.startsWith("https://") &&
+        !url.startsWith("http://")) {
+
+        message.innerHTML =
+            "Please enter a valid published website URL 💗";
+
+        return;
+    }
+
+    if (typeof QRCode === "undefined") {
+
+        message.innerHTML =
+            "QR library couldn't load. Check your internet connection.";
+
+        return;
+    }
+
+    new QRCode(qr, {
+        text: url,
+        width: 200,
+        height: 200,
+        colorDark: "#e75480",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    message.innerHTML =
+        "Scan me for a little love, Babeee! 💕";
+}
+
+</script>
+
+</body>
+</html>
